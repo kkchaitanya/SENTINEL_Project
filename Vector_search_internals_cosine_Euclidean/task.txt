@@ -1,0 +1,32 @@
+Week task 5: Vector search internals, cosine vs Euclidean from scratch
+Due 11/8/2026, 11:59:00 PM · 25 marks
+
+How this is marked
+
+Code, reviewed automatically against the requirements
+15
+Video explanation, watched and reviewed against your code
+10
+What to build
+Class: Vector Database Internals.
+
+OBJECTIVE
+
+Show that you understand what a vector database computes, not just how to call it.
+
+WHAT TO BUILD
+
+1
+Reproduce the class example by hand in Python: store the 2D points (2,3), (1,2) and (0,4), query with (2,4), and compute the Euclidean distance and the cosine similarity to each point. Print the ranking for both.
+
+2
+Write brute-force top-k search in NumPy for both metrics over the Gemini Embedding 2 vectors from task 4 (or 1,000 new ones).
+
+3
+Run the same queries in Qdrant and show that the results match your NumPy results.
+
+4
+Normalise the vectors and show why cosine and dot product then give the same ranking.
+
+5
+Time brute force against Qdrant for 1,000 and for 10,000 vectors, and explain in the README what an HNSW index changes.
